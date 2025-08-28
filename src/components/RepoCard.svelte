@@ -25,5 +25,6 @@
         {#if shouldDisplayVersion == true}
             <Shield altText="Project version" shieldLink={versionShield} />
         {/if}
+        <Shield altText="Repo license" shieldLink="github/license/luckybelcik/{repoName}?"/>
     </div>
 </BasicInnerCard>
