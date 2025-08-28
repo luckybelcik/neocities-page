@@ -44,10 +44,11 @@
             </CardRows>
 
             <CardRows classes="w-[30%]">
-                <BasicCard title="Github Projects" titleSize=3 classes="bg-base-200">
+                <BasicCard title="Github Repos" titleSize=3 classes="bg-base-200">
                     <ul class="list gap-2">
-                        <RepoCard title="Redbud" description="The webtools for swagengine - my game engine." repoName="swagengine-webapp" useNpmVersioning={true}></RepoCard>
-                        <RepoCard title="Swagengine" description="ECS-driven data-oriented 2D game engine written in Rust." repoName="swagengine" tomlPath="https://raw.githubusercontent.com/luckybelcik/swagengine/refs/heads/master/Cargo.toml"></RepoCard>
+                        <RepoCard title="Redbud" description="The webtools for swagengine - my game engine." repoName="swagengine-webapp" useNpmVersioning={true}/>
+                        <RepoCard title="Swagengine" description="ECS-driven data-oriented 2D game engine written in Rust." repoName="swagengine" tomlPath="https://raw.githubusercontent.com/luckybelcik/swagengine/refs/heads/master/Cargo.toml"/>
+                        <RepoCard title="Neocities Page (this)" description="Linktree-like self-representation website for Neocities." repoName="neocities-page" useNpmVersioning={true}/>
                     </ul>
                 </BasicCard>
 
