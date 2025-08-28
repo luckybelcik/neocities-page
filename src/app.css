@@ -176,5 +176,13 @@
 }
 
 .shadow-strong {
-  box-shadow: 0 20px 30px -2px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 30px -2px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+}
+
+.light-mode .inverted-color-widget {
+    visibility: hidden;
+}
+
+.inverted-color-widget {
+    visibility: visible;
 }

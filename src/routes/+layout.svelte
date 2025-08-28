@@ -20,7 +20,7 @@
 <SoundcloudWidget />
 
 <label class="fixed top-1 right-1 swap swap-rotate">
-  <input type="checkbox" class="theme-controller" value="lucky" />
+  <input type="checkbox" class="theme-controller" value="lucky" onclick={() => document.documentElement.classList.toggle('light-mode')} />
 
   <svg
     class="swap-on h-10 w-10 fill-white"
