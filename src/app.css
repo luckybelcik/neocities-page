@@ -1,0 +1,180 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: lucky --default, unlucky --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "lucky";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(97% 0 0);
+  --color-base-200: oklch(92% 0 0);
+  --color-base-300: oklch(87% 0 0);
+  --color-base-content: oklch(14% 0 0);
+  --color-primary: oklch(0.8498 0.173865 86.5517);
+  --color-primary-content: oklch(15.092% 0.036 346.812);
+  --color-secondary: oklch(0.6792 0.2151 39.55);
+  --color-secondary-content: oklch(14.84% 0.029 301.883);
+  --color-accent: oklch(83.392% 0.124 66.558);
+  --color-accent-content: oklch(16.678% 0.024 66.558);
+  --color-neutral: oklch(86% 0.005 56.366);
+  --color-neutral-content: oklch(14% 0.004 49.25);
+  --color-info: oklch(88.263% 0.093 212.846);
+  --color-info-content: oklch(17.652% 0.018 212.846);
+  --color-success: oklch(87.099% 0.219 148.024);
+  --color-success-content: oklch(17.419% 0.043 148.024);
+  --color-warning: oklch(95.533% 0.134 112.757);
+  --color-warning-content: oklch(19.106% 0.026 112.757);
+  --color-error: oklch(68.22% 0.206 24.43);
+  --color-error-content: oklch(13.644% 0.041 24.43);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "unlucky";
+  default: true;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(26% 0 0);
+  --color-base-200: oklch(20% 0 0);
+  --color-base-300: oklch(14% 0 0);
+  --color-base-content: oklch(97.747% 0.007 106.545);
+  --color-primary: oklch(0.8498 0.173865 86.5517);
+  --color-primary-content: oklch(15.092% 0.036 346.812);
+  --color-secondary: oklch(0.6792 0.2151 39.55);
+  --color-secondary-content: oklch(14.84% 0.029 301.883);
+  --color-accent: oklch(83.392% 0.124 66.558);
+  --color-accent-content: oklch(16.678% 0.024 66.558);
+  --color-neutral: oklch(37% 0.01 67.558);
+  --color-neutral-content: oklch(87.889% 0.006 275.524);
+  --color-info: oklch(88.263% 0.093 212.846);
+  --color-info-content: oklch(17.652% 0.018 212.846);
+  --color-success: oklch(87.099% 0.219 148.024);
+  --color-success-content: oklch(17.419% 0.043 148.024);
+  --color-warning: oklch(95.533% 0.134 112.757);
+  --color-warning-content: oklch(19.106% 0.026 112.757);
+  --color-error: oklch(68.22% 0.206 24.43);
+  --color-error-content: oklch(13.644% 0.041 24.43);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+.background-container-front {
+    background-image: url('https://i.postimg.cc/mb3PPdwM/space.webp');
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: 1536px 6144px;
+
+    image-rendering: pixelated;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    animation-name: background-scrolling-front;
+    animation-duration: 256s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-scrolling-front {
+    from {
+        background-position: 0 0px;
+    }
+    to {
+        background-position: 0 -6144px;
+    }
+}
+
+.background-container-middle {
+    background-image: url('https://i.postimg.cc/mb3PPdwM/space.webp');
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: 768px 3072px;
+    opacity: 50%;
+
+    image-rendering: pixelated;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    animation-name: background-scrolling-middle;
+    animation-duration: 512s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-scrolling-middle {
+    from {
+        background-position: 0 0px;
+    }
+    to {
+        background-position: -768px -3072px;
+    }
+}
+
+.background-container-back {
+    background-image: url('https://i.postimg.cc/pV3cNPpM/space-tile.webp');
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: 512px 512px;
+    opacity: 100%;
+
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    animation-name: background-scrolling-back;
+    animation-duration: 128s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-scrolling-back {
+    from {
+        background-position: -512px 0px;
+    }
+    to {
+        background-position: 0 -512px;
+    }
+}
+
+.background-container-backdrop {
+    background-color: black;
+    background-position: 0 0;
+    background-attachment: static;
+    opacity: 100%;
+
+    z-index: -2;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    animation-name: background-scrolling-back;
+    animation-duration: 128s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.shadow-strong {
+  box-shadow: 0 20px 30px -2px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+}
