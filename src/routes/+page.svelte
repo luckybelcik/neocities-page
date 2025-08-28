@@ -7,18 +7,18 @@
 
 </script>
 
-<div class="flex flex-col">
-    <div class="bg-black h-[70vh] shadow-strong">
-        yo
-    </div>
+<div class="relative">
+    <div class="absolute background-container-front"></div>
+    <div class="absolute background-container-middle"></div>
+    <div class="absolute background-container-back"></div>
+    <div class="absolute background-container-backdrop"></div>
 
-    <div class="h-full flex overflow-hidden">
-        <div class="absolute background-container-front"></div>
-        <div class="absolute background-container-middle"></div>
-        <div class="absolute background-container-back"></div>
-        <div class="absolute background-container-backdrop"></div>
+    <div class="flex flex-col">
+        <div class="bg-black h-[70vh] shadow-strong">
+            yo
+        </div>
 
-        <div class="flex m-5 mb-0 gap-5 w-full h-[90vh]">
+        <div class="h-full flex m-5 gap-5">
             <CardRows classes="w-[30%]">
                 <BasicCard title="Discord Servers" titleSize=3 classes="bg-base-200">
                     <BasicInnerCard title="Evil Development"
