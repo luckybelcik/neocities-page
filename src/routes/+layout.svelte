@@ -1,6 +1,7 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
   	import "../app.css";
+    import SoundcloudWidget from '../components/SoundcloudWidget.svelte';
 
 	let { children } = $props();
 </script>
@@ -16,7 +17,9 @@
 	<div class="text-accent" >https://deep-fold.itch.io/space-background-generator</div> 
 </a>
 
-<label class="fixed bottom-1 right-1 swap swap-rotate shadow-strong">
+<SoundcloudWidget />
+
+<label class="fixed top-1 right-1 swap swap-rotate">
   <input type="checkbox" class="theme-controller" value="lucky" />
 
   <svg
