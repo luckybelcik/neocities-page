@@ -20,7 +20,7 @@
 
         <div class="h-full flex m-5 gap-5">
             <CardRows classes="w-[30%]">
-                <BasicCard title="Discord Servers" titleSize=3 classes="bg-base-200">
+                <BasicCard title="Discord Servers" titleSize=3 classes="bg-base-100">
                     <BasicInnerCard title="Evil Development"
                         titleLink="https://discord.gg/HQgt45ByAN"
                         description="The discord server for swagengine, Redbud, and the game I'm making using them. Join for teasers and announcements!"
@@ -38,13 +38,13 @@
             </CardRows>
 
             <CardRows classes="w-[40%]">
-                <BasicCard title="Main Content" titleWeight="bold" titleSize=4 classes="bg-base-300">
+                <BasicCard title="Main Content" titleWeight="bold" titleSize=4 classes="bg-base-100">
 
                 </BasicCard>
             </CardRows>
 
             <CardRows classes="w-[30%]">
-                <BasicCard title="Github Repos" titleSize=3 classes="bg-base-200">
+                <BasicCard title="Github Repos" titleSize=3 classes="bg-base-100">
                     <ul class="list gap-2">
                         <RepoCard title="Redbud" description="The webtools for swagengine - my game engine. Acts as a sort of visual editor for adding game elements, including items, entities, and even UI elements." repoName="swagengine-webapp" useNpmVersioning={true}/>
                         <RepoCard title="Swagengine" description="ECS-driven data-oriented 2D game engine written in Rust. Uses a system <-> component, as well as a task and event approach to allow parallelization of most processes." repoName="swagengine" tomlPath="https://raw.githubusercontent.com/luckybelcik/swagengine/refs/heads/master/Cargo.toml"/>
@@ -52,7 +52,7 @@
                     </ul>
                 </BasicCard>
 
-                <BasicCard title="Miscellaneous" titleWeight="normal" titleSize=3 classes="bg-base-200">
+                <BasicCard title="Miscellaneous" titleWeight="normal" titleSize=3 classes="bg-base-100">
 
                 </BasicCard>
             </CardRows>

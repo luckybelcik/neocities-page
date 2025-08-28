@@ -4,7 +4,7 @@
     let { title, description, subtitle, titleLink, icon, top, children } = $props<{ title?: string | undefined, subtitle?: string | undefined, titleLink?: string | undefined, description?: string | undefined, icon?: string | undefined, top?: Snippet, children?: Snippet }>();
 </script>
 
-<div class="p-2 pt-1 bg-base-300 rounded-lg flex items-start">
+<div class="p-2 pt-1 bg-base-200 rounded-lg flex items-start">
     <div class="flex-grow">
         {#if icon}
             <img src="{icon}" alt="icon" class="float-left h-18 mb-1 ml-0 m-2 w-auto rounded-lg"/>
