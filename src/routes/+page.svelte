@@ -1,10 +1,22 @@
-<script>
+<script lang="ts">
+    import { onMount } from "svelte";
     import BasicCard from "../components/BasicCard.svelte";
     import BasicInnerCard from "../components/BasicInnerCard.svelte";
     import CardRows from "../components/CardRows.svelte";
     import RepoCard from "../components/RepoCard.svelte";
     import Shield from "../components/Shield.svelte";
+    import { quotes } from "$lib/quotes";
 
+    function getRandomQuote(): string {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      return quotes[randomIndex];
+    }
+
+    let currentQuote: string = ""; 
+
+    onMount(() => {
+        currentQuote = getRandomQuote();
+    });
 </script>
 
 <div class="relative">
@@ -15,7 +27,7 @@
 
     <div class="flex flex-col">
         <div class="bg-base-100 h-[70vh] shadow-strong">
-            <div class="text-center p-5">jack of all trades, master of none, better than master of one</div>
+            <div id="random-quote" class="text-center p-5">{currentQuote}</div>
         </div>
 
         <div class="h-full flex m-5 gap-5">
