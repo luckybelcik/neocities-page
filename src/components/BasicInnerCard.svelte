@@ -21,8 +21,10 @@
             </div>
         </div>
         <div class="text-m opacity-70">{description}</div>
+        {#if children}
         <div class="mt-2">
             {@render children?.()}
         </div>
+        {/if}
     </div>
 </div>
