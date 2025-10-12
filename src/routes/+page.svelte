@@ -6,6 +6,7 @@
     import RepoCard from "../components/RepoCard.svelte";
     import Shield from "../components/Shield.svelte";
     import { quotes } from "$lib/quotes";
+    import DiscordCard from "../components/DiscordCard.svelte";
 
     function getRandomQuote(): string {
       const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -33,19 +34,21 @@
         <div class="h-full flex m-5 gap-5">
             <CardRows classes="w-[30%]">
                 <BasicCard title="Discord Servers" titleSize=3 classes="bg-base-100">
-                    <BasicInnerCard title="Evil Development"
-                        titleLink="https://discord.gg/HQgt45ByAN"
-                        description="The discord server for swagengine, Redbud, and the game I'm making using them. Join for teasers and announcements!"
-                        icon="https://cdn.discordapp.com/icons/1379475362077085707/563db5a77f8fd8f080b93001ce58f1f5.webp?size=128"
-                    >
-                        {#snippet top()}
-                            <a href="https://discord.gg/HQgt45ByAN" target="_blank">
-                              <button class="btn btn-success btn-sm text-sm mt-1">Join</button>
-                            </a>
-                        {/snippet}
+                    <ul class="list gap-2">
+                        <DiscordCard
+                            title="Evil Development"
+                            inviteLink="https://discord.gg/HQgt45ByAN"
+                            description="The discord server for swagengine, Redbud, and the game I'm making using them. Join for teasers and announcements!"
+                            icon="https://cdn.discordapp.com/icons/1379475362077085707/563db5a77f8fd8f080b93001ce58f1f5.webp?size=128"
+                        />
 
-                        <Shield altText="Discord" shieldLink="discord/1379475362077085707?" color="green" />
-                    </BasicInnerCard>
+                        <DiscordCard
+                            title="White Walls Fanclub"
+                            inviteLink="https://discord.gg/db4YcPrz8h"
+                            description="The White Walls in my Room fanclub! Breakcore and satire Hip-Hop, what could be better? Join now now now!!!"
+                            icon="https://cdn.discordapp.com/icons/1256961240870162544/ee3c269d6ccd79c3f170ba321348f037.webp?size=1024"
+                        />
+                    </ul>
                 </BasicCard>
             </CardRows>
 

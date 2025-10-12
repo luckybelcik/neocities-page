@@ -7,7 +7,7 @@
 <div class="p-2 pt-1 bg-base-200 rounded-lg flex items-start">
     <div class="flex-grow">
         {#if icon}
-            <img src="{icon}" alt="icon" class="float-left h-18 mb-1 ml-0 m-2 w-auto rounded-lg"/>
+            <img src="{icon}" alt="icon" class="float-left h-18 mr-2 mt-1 w-auto rounded-lg"/>
         {/if}
         <div class="flex flex-row items-center gap-1">
             <div class="flex flex-row items-baseline gap-1">
