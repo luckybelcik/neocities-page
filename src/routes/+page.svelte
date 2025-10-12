@@ -26,6 +26,7 @@
     <div class="absolute background-container-middle"></div>
     <div class="absolute background-container-back"></div>
     <div class="absolute background-container-backdrop"></div>
+    <div class="absolute background-container-inversion"></div>
 
     <div class="flex flex-col">
         <div class="bg-base-100 h-[70vh] shadow-strong">
