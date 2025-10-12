@@ -11,8 +11,10 @@
     title={title}
     titleLink={spotifyLink}
     description={description}
-    icon={iconLink}>
-    {#snippet top()}
+    icon={iconLink}
+    iconSize={20}>
+    {#snippet besideIcon()}
+    <div class="">
         {#if displayYoutube}
         <a href={youtubeLink} target="_blank" aria-label="Listen on YouTube">
             <button class="btn btn-circle btn-sm text-sm mt-1" aria-label="Listen on YouTube">
@@ -42,5 +44,6 @@
             </button>
         </a>
         {/if}
+    </div>
     {/snippet}
 </BasicInnerCard>

@@ -81,7 +81,7 @@
 
                     <SongCard
                         title="EVIL RAGE BEAT OF DEATH"
-                        description="I got no clue what a rage track looks like, btw."
+                        description="I got no clue what a rage track looks like"
                         iconLink="https://i.scdn.co/image/ab67616d0000b273b40c316bb5df8b069ad59150?format=webp&width=800&height=800"
                         youtubeLink="https://youtu.be/gTm3slYp5uE?si=fCKBFxUvyGnkXW1g"
                         appleMusicLink="https://music.apple.com/us/song/evil-rage-beat-of-death-feat-young-d-r-667/1827726955"
