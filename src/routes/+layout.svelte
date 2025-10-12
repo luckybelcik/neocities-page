@@ -23,7 +23,7 @@
   <input type="checkbox" class="theme-controller" value="lucky" onclick={() => document.documentElement.classList.toggle('light-mode')} />
 
   <svg
-    class="swap-on h-10 w-10 fill-white"
+    class="swap-on h-10 w-10 fill-black"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24">
     <path

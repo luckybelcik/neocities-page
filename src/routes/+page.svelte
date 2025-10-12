@@ -14,7 +14,7 @@
     <div class="absolute background-container-backdrop"></div>
 
     <div class="flex flex-col">
-        <div class="bg-black h-[70vh] shadow-strong">
+        <div class="bg-base-100 h-[70vh] shadow-strong">
             <div class="text-center p-5">jack of all trades, master of none, better than master of one</div>
         </div>
 
