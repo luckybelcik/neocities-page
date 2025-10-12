@@ -18,7 +18,7 @@
 
 <BasicInnerCard title={title} subtitle={repoName} titleLink="https://github.com/luckybelcik/{repoName}" description={description} >
     <div class="flex flex-wrap gap-2">
-        <Shield altText="GitHub commit activity" shieldLink="github/commit-activity/m/luckybelcik/{repoName}?" color="green"/>
+        <Shield altText="GitHub commit activity" shieldLink="github/commit-activity/t/luckybelcik/{repoName}?" color="green"/>
         <Shield altText="Github last commit" shieldLink="github/last-commit/luckybelcik/{repoName}?" color="green"/>
         <Shield altText="GitHub top language" shieldLink="github/languages/top/luckybelcik/{repoName}?" color="info"/>
         <Shield altText="GitHub language count" shieldLink="github/languages/count/luckybelcik/{repoName}?" color="info"/>
