@@ -12,7 +12,7 @@
 
 {@render children?.()}
 
-<a class="fixed bottom-1 left-2 opacity-30 hover:opacity-70 transition-opacity flex gap-2 text-white" href="https://deep-fold.itch.io/space-background-generator">
+<a class="fixed bottom-1 right-2 opacity-30 hover:opacity-70 transition-opacity flex gap-2 text-white" href="https://deep-fold.itch.io/space-background-generator">
 	backgrounds made using
 	<div class="text-accent" >https://deep-fold.itch.io/space-background-generator</div> 
 </a>

@@ -15,7 +15,7 @@
 
     <div class="flex flex-col">
         <div class="bg-black h-[70vh] shadow-strong">
-            yo
+            <div class="text-center p-5">jack of all trades, master of none, better than master of one</div>
         </div>
 
         <div class="h-full flex m-5 gap-5">
