@@ -1,14 +1,31 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
-  	import "../app.css";
-    import SoundcloudWidget from '../components/SoundcloudWidget.svelte';
+    import { onMount } from 'svelte';
+  import "../app.css";
+  import SoundcloudWidget from '../components/SoundcloudWidget.svelte';
+    import { fade } from 'svelte/transition';
 
 	let { children } = $props();
+
+  let isLoading = $state(true);
+
+  onMount(() => {
+      // Setting a small delay is still a good practice
+      setTimeout(() => {
+          isLoading = false;
+      }, 300); 
+  });
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
+
+{#if isLoading}
+  <div class="loading-overlay bg-black" transition:fade={{duration: 100}}>
+
+  </div>
+{/if}
 
 {@render children?.()}
 
