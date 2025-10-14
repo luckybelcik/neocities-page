@@ -7,29 +7,37 @@
 
 	let { children } = $props();
 
-  let isLoading = $state(true);
+  let pageState = $state("loading");
 
   let loadingMessage = $state("loading...")
 
   onMount(() => {
-      loadingMessage = "loaded!"; 
-      // Setting a small delay is still a good practice
-      setTimeout(() => {
-          isLoading = false;
-      }, 100); 
+      loadingMessage = "press [enter] to proceed";
+      pageState = "loaded";
+      window.addEventListener('keyup', handleEnterKey);
   });
+
+  function handleEnterKey(event: any) {
+    if (event.key === 'Enter') {
+      loadingMessage = "welcome!"
+      setTimeout(() => {
+        pageState = "display";
+        window.removeEventListener('keyup', handleEnterKey);
+      }, 1)
+    }
+  }
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{#if isLoading}
+{#if pageState != "display"}
   <div class="loading-overlay bg-black flex justify-center items-center flex-col" transition:fade={{duration: 1000}}>
     <div class="h-80">
       <img alt="lckblck logotype" src={"logotype.webp"}/>
     </div>
-    <div>
+    <div class="font-mono opacity-50">
       {loadingMessage}
     </div>
   </div>
