@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>LCKBLCK</title>
+</svelte:head>
+
 <script lang="ts">
     import { onMount } from "svelte";
     import BasicCard from "../components/BasicCard.svelte";
