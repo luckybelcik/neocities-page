@@ -9,11 +9,14 @@
 
   let isLoading = $state(true);
 
+  let loadingMessage = $state("loading...")
+
   onMount(() => {
+      loadingMessage = "loaded!"; 
       // Setting a small delay is still a good practice
       setTimeout(() => {
           isLoading = false;
-      }, 300); 
+      }, 100); 
   });
 </script>
 
@@ -22,8 +25,13 @@
 </svelte:head>
 
 {#if isLoading}
-  <div class="loading-overlay bg-black" transition:fade={{duration: 100}}>
-
+  <div class="loading-overlay bg-black flex justify-center items-center flex-col" transition:fade={{duration: 1000}}>
+    <div class="h-80">
+      <img alt="lckblck logotype" src={"logotype.webp"}/>
+    </div>
+    <div>
+      {loadingMessage}
+    </div>
   </div>
 {/if}
 
