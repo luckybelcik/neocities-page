@@ -33,7 +33,7 @@
 </script>
 
 <div class="{classes} relative p-5 rounded-3xl shadow-strong w-full">
-    <div class="absolute inset-0 bg-transparent cursor-pointer z-10"
+    <div class="absolute inset-0 bg-transparent cursor-pointer select-none z-10"
         onclick={() => toggleContent()}
         onkeydown={(e) => handleKey(e)}
         tabindex="0"
