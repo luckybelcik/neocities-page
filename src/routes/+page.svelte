@@ -12,6 +12,10 @@
     import { quotes } from "$lib/quotes";
     import DiscordCard from "../components/DiscordCard.svelte";
     import SongCard from "../components/SongCard.svelte";
+    import GithubIcon from '$lib/icons/github-icon.svg?raw';
+    import DiscordIcon from '$lib/icons/discord-icon.svg?raw';
+    import MusicNoteIcon from '$lib/icons/music-note.svg?raw';
+    import SvgIcon from "../components/SvgIcon.svelte";
 
     function getRandomQuote(): string {
       const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -39,7 +43,7 @@
 
         <div class="h-300 flex m-5 gap-5">
             <CardRows classes="w-[30%]">
-                <BasicCard title="Discord Servers" titleSize=3 classes="bg-base-100">
+                <BasicCard title="Discord Servers" titleSize=3 classes="bg-base-100" iconSvgString={DiscordIcon}>
                     <ul class="list gap-2">
                         <DiscordCard
                             title="Evil Development"
@@ -65,7 +69,7 @@
             </CardRows>
 
             <CardRows classes="w-[30%]">
-                <BasicCard title="Github Repos" titleSize=3 classes="bg-base-100">
+                <BasicCard title="Github Repos" titleSize=3 classes="bg-base-100" iconSvgString={GithubIcon}>
                     <ul class="list gap-2">
                         <RepoCard title="Redbud" description="The webtools for swagengine - my game engine. Acts as a sort of visual editor for adding game elements, including items, entities, and even UI elements." repoName="swagengine-webapp" useNpmVersioning={true}/>
                         <RepoCard title="Swagengine" description="ECS-driven data-oriented 2D game engine written in Rust. Uses a system <-> component, as well as a task and event approach to allow parallelization of most processes." repoName="swagengine" tomlPath="https://raw.githubusercontent.com/luckybelcik/swagengine/refs/heads/master/Cargo.toml"/>
@@ -73,7 +77,7 @@
                     </ul>
                 </BasicCard>
 
-                <BasicCard title="Best Tracks" titleSize=3 classes="bg-base-100">
+                <BasicCard title="Best Tracks" titleSize=3 classes="bg-base-100" iconSvgString={MusicNoteIcon}>
                     <ul class="list gap-2">
                     <SongCard
                         title="Mr. Evil"

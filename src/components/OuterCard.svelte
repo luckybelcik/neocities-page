@@ -1,7 +1,8 @@
 <script lang="ts">
     import { slide } from "svelte/transition";
+    import SvgIcon from "./SvgIcon.svelte";
 
-    let { classes, title, titleWeight, titleSize, children } = $props<{ classes?: string | undefined, title?: string | undefined, titleWeight?: string | undefined, titleSize?: string | undefined, children?: any }>();
+    let { classes, title, titleWeight, titleSize, children, iconSvgString } = $props<{ classes?: string | undefined, title?: string | undefined, titleWeight?: string | undefined, titleSize?: string | undefined, children?: any, iconSvgString?: string | undefined }>();
 
     let isOpen = $state(true);
     let isVisible = $state(true);
@@ -39,9 +40,14 @@
         tabindex="0"
         role="button">
     </div>
-    <div class="text-center text-{titleSize}xl font-{titleWeight}">
+
+    <div class="flex flex-row gap-2 justify-center text-{titleSize}xl font-{titleWeight}">
         {title}
+        {#if iconSvgString}
+            <SvgIcon svgContent={iconSvgString} size="w-10 h-10"/>
+        {/if}
     </div>
+
     {#if children && isOpen}
     <div transition:slide={{ duration: transitionDuration }}>
         <div class="mt-5">
