@@ -1,5 +1,5 @@
 <script lang="ts">
-    import BasicInnerCard from "./BasicInnerCard.svelte";
+    import BasicInnerCard from "./InnerCard.svelte";
     import Shield from "./Shield.svelte";
 
     let { title, description, repoName, useNpmVersioning, tomlPath } = $props<{ title: string, description: string, repoName: string, useNpmVersioning?: boolean | undefined, tomlPath?: string | undefined }>();

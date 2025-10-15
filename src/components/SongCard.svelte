@@ -1,5 +1,5 @@
 <script lang="ts">
-    import BasicInnerCard from "./BasicInnerCard.svelte";
+    import BasicInnerCard from "./InnerCard.svelte";
 
     let { title, description, iconLink, spotifyLink, appleMusicLink, youtubeLink } = $props<{ title?: string | undefined, description?: string | undefined, iconLink?: string | undefined, spotifyLink?: string | undefined, appleMusicLink?: string | undefined, youtubeLink?: string | undefined }>();
     const displayYoutube = youtubeLink != undefined;

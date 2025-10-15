@@ -4,8 +4,8 @@
 
 <script lang="ts">
     import { onMount } from "svelte";
-    import BasicCard from "../components/BasicCard.svelte";
-    import BasicInnerCard from "../components/BasicInnerCard.svelte";
+    import BasicCard from "../components/OuterCard.svelte";
+    import BasicInnerCard from "../components/InnerCard.svelte";
     import CardRows from "../components/CardRows.svelte";
     import RepoCard from "../components/RepoCard.svelte";
     import Shield from "../components/Shield.svelte";

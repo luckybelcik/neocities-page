@@ -1,5 +1,5 @@
 <script lang="ts">
-    import BasicInnerCard from "./BasicInnerCard.svelte";
+    import BasicInnerCard from "./InnerCard.svelte";
     import Shield from "./Shield.svelte";
 
     let { title, description, inviteLink, icon } = $props<{ title?: string | undefined, description?: string | undefined, inviteLink?: string | undefined, icon?: string | undefined }>();
