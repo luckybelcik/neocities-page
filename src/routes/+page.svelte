@@ -37,7 +37,7 @@
             <div id="random-quote" class="text-center p-5">{currentQuote}</div>
         </div>
 
-        <div class="h-full flex m-5 gap-5">
+        <div class="h-300 flex m-5 gap-5">
             <CardRows classes="w-[30%]">
                 <BasicCard title="Discord Servers" titleSize=3 classes="bg-base-100">
                     <ul class="list gap-2">
