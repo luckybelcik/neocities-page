@@ -16,6 +16,7 @@
     import DiscordIcon from '$lib/icons/discord-icon.svg?raw';
     import MusicNoteIcon from '$lib/icons/music-note.svg?raw';
     import SvgIcon from "../components/SvgIcon.svelte";
+    import RandomFactGenerator from "../components/RandomFactGenerator.svelte";
 
     function getRandomQuote(): string {
       const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -60,11 +61,17 @@
                         />
                     </ul>
                 </BasicCard>
+
+                <BasicCard title="Random Fact Generator" titleSize=3 classes="bg-base-100">
+                    <RandomFactGenerator>
+
+                    </RandomFactGenerator>
+                </BasicCard>
             </CardRows>
 
             <CardRows classes="w-[40%]">
-                <BasicCard title="Main Content" titleWeight="bold" titleSize=4 classes="bg-base-100">
-
+                <BasicCard title="About Me" titleWeight="bold" titleSize=4 classes="bg-base-100">
+                    I like apples
                 </BasicCard>
             </CardRows>
 
