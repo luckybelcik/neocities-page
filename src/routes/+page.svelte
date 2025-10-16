@@ -4,6 +4,8 @@
     import { fade } from 'svelte/transition';
     import OuterCard from '../components/OuterCard.svelte';
     import { staticDataStore } from '$lib/staticDataStore';
+    import SvgIcon from '../components/SvgIcon.svelte';
+    import DiscordIcon from '$lib/icons/discord-icon.svg?raw';
 
     let pageState = $state("loading");
     let loadingMessage = $state("loading...")
@@ -70,7 +72,7 @@
                 <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
                     <div class="text-xl">Social Media & Contact</div>
                     <div class="flex flex-row justify-center gap-3">
-                        <a href="https://discord.com/users/700617166223048786" class="text-center bg-[#5865F2] btn btn-ghost text-white">Discord</a>
+                        <a href="https://discord.com/users/700617166223048786" class="text-center bg-[#5865F2] btn btn-ghost text-white"><SvgIcon svgContent={DiscordIcon} />Discord</a>
                         <a href="/home" class="text-center bg-[#E60023] btn btn-ghost text-white">Pinterest</a>
                         <a href="/home" class="text-center bg-[#FF0000] btn btn-ghost text-white">Youtube</a>
                     </div>
