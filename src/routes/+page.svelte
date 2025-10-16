@@ -7,6 +7,8 @@
     import SvgIcon from '../components/SvgIcon.svelte';
     import DiscordIcon from '$lib/icons/discord-icon.svg?raw';
     import GithubIcon from '$lib/icons/github-icon.svg?raw';
+    import SpotifyIcon from '$lib/icons/spotify-icon.svg?raw';
+    import YoutubeIcon from '$lib/icons/youtube-icon.svg?raw';
 
     let pageState = $state("loading");
     let loadingMessage = $state("loading...")
@@ -75,7 +77,7 @@
                     <div class="flex flex-row justify-center gap-3">
                         <a href="https://discord.com/users/700617166223048786" class="text-center bg-[#5865F2] btn btn-ghost text-white"><SvgIcon svgContent={DiscordIcon} />Discord</a>
                         <a href="/home" class="text-center bg-[#E60023] btn btn-ghost text-white">Pinterest</a>
-                        <a href="/home" class="text-center bg-[#FF0000] btn btn-ghost text-white">Youtube</a>
+                        <a href="/home" class="text-center bg-[#FF0000] btn btn-ghost text-white"><SvgIcon svgContent={YoutubeIcon} />Youtube</a>
                     </div>
                 </div>
 
@@ -83,7 +85,7 @@
                     <div class="text-xl">Work Related</div>
                     <div class="flex flex-row justify-center gap-3">
                         <a href="https://github.com/luckybelcik" class="text-center btn-ghost bg-white btn text-black"><SvgIcon svgContent={GithubIcon} />Github</a>
-                        <a href="https://open.spotify.com/artist/3RoJSUCB7S4pRbhhupoLKc?si=284b813817904f53" class="text-center bg-[#1ED760] btn btn-ghost text-black">Spotify</a>
+                        <a href="https://open.spotify.com/artist/3RoJSUCB7S4pRbhhupoLKc?si=284b813817904f53" class="text-center bg-[#1ED760] btn btn-ghost text-black"><SvgIcon svgContent={SpotifyIcon} />Spotify</a>
                     </div>
                 </div>
             </div>
