@@ -10,6 +10,9 @@
     import SpotifyIcon from '$lib/icons/spotify-icon.svg?raw';
     import YoutubeIcon from '$lib/icons/youtube-icon.svg?raw';
     import PinterestIcon from '$lib/icons/pinterest-icon.svg?raw';
+    import MusicNoteIcon from '$lib/icons/music-note.svg?raw';
+    import HomeIcon from '$lib/icons/home.svg?raw';
+    import ImageIcon from '$lib/icons/image.svg?raw';
 
     let pageState = $state("loading");
     let loadingMessage = $state("loading...")
@@ -67,26 +70,26 @@
                 <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
                     <div class="text-xl">Navigation</div>
                     <div class="flex flex-row justify-center gap-3">
-                        <a href="/home" class="text-center bg-base-content btn btn-ghost text-base-200">Home</a>
-                        <a href="/gallery" class="text-center bg-base-content btn btn-ghost text-base-200">Gallery</a>
-                        <a href="/tracks" class="text-center bg-base-content btn btn-ghost text-base-200">Tracks</a>
+                        <a href="/home" class="text-center bg-base-content btn btn-ghost text-base-200 p-3"><SvgIcon svgContent={HomeIcon} />Home</a>
+                        <a href="/gallery" class="text-center bg-base-content btn btn-ghost text-base-200 p-3"><SvgIcon svgContent={ImageIcon} />Gallery</a>
+                        <a href="/tracks" class="text-center bg-base-content btn btn-ghost text-base-200 p-3"><SvgIcon svgContent={MusicNoteIcon} />Tracks</a>
                     </div>
                 </div>
 
                 <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
                     <div class="text-xl">Social Media & Contact</div>
                     <div class="flex flex-row justify-center gap-3">
-                        <a href="https://discord.com/users/700617166223048786" class="text-center bg-[#5865F2] btn btn-ghost text-white"><SvgIcon svgContent={DiscordIcon} />Discord</a>
-                        <a href="/home" class="text-center bg-[#E60023] btn btn-ghost text-white"><SvgIcon svgContent={PinterestIcon} />Pinterest</a>
-                        <a href="/home" class="text-center bg-[#FF0000] btn btn-ghost text-white"><SvgIcon svgContent={YoutubeIcon} />Youtube</a>
+                        <a href="https://discord.com/users/700617166223048786" class="text-center p-3 bg-[#5865F2] btn btn-ghost text-white"><SvgIcon svgContent={DiscordIcon} />Discord</a>
+                        <a href="/home" class="text-center bg-[#E60023] btn btn-ghost text-white p-3"><SvgIcon svgContent={PinterestIcon} />Pinterest</a>
+                        <a href="/home" class="text-center bg-[#FF0000] btn btn-ghost text-white p-3"><SvgIcon svgContent={YoutubeIcon} />Youtube</a>
                     </div>
                 </div>
 
                 <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
                     <div class="text-xl">Work Related</div>
                     <div class="flex flex-row justify-center gap-3">
-                        <a href="https://github.com/luckybelcik" class="text-center btn-ghost bg-white btn text-black"><SvgIcon svgContent={GithubIcon} />Github</a>
-                        <a href="https://open.spotify.com/artist/3RoJSUCB7S4pRbhhupoLKc?si=284b813817904f53" class="text-center bg-[#1ED760] btn btn-ghost text-black"><SvgIcon svgContent={SpotifyIcon} />Spotify</a>
+                        <a href="https://github.com/luckybelcik" class="text-center btn-ghost bg-white btn text-black p-3"><SvgIcon svgContent={GithubIcon} />Github</a>
+                        <a href="https://open.spotify.com/artist/3RoJSUCB7S4pRbhhupoLKc?si=284b813817904f53" class="text-center bg-[#1ED760] btn btn-ghost text-black p-3"><SvgIcon svgContent={SpotifyIcon} />Spotify</a>
                     </div>
                 </div>
             </div>
