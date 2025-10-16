@@ -48,6 +48,12 @@
   </div>
 {/if}
 
+<div class="absolute background-container-front"></div>
+<div class="absolute background-container-middle"></div>
+<div class="absolute background-container-back"></div>
+<div class="absolute background-container-backdrop"></div>
+<div class="absolute background-container-inversion"></div>
+
 <div class="w-full h-screen flex flex-col justify-center items-center">
     <div class="w-140">
         <OuterCard title="Welcome!" titleWeight="bold" titleSize=4 toggleable={false} classes="bg-base-200">
@@ -64,7 +70,7 @@
                 <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
                     <div class="text-xl">Social Media & Contact</div>
                     <div class="flex flex-row justify-center gap-3">
-                        <a href="/home" class="text-center bg-[#5865F2] btn btn-ghost text-white">Discord</a>
+                        <a href="https://discord.com/users/700617166223048786" class="text-center bg-[#5865F2] btn btn-ghost text-white">Discord</a>
                         <a href="/home" class="text-center bg-[#E60023] btn btn-ghost text-white">Pinterest</a>
                         <a href="/home" class="text-center bg-[#FF0000] btn btn-ghost text-white">Youtube</a>
                     </div>
