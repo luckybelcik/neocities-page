@@ -41,24 +41,26 @@
     <div class="w-140">
         <OuterCard title="Welcome!" titleWeight="bold" titleSize=4 toggleable={false} classes="bg-base-200">
             <div class="flex flex-col justify-center gap-6">
-                <div class="flex flex-col items-center gap-2">
-                    Navigation
+                <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
+                    <div class="text-xl">Navigation</div>
                     <div class="flex flex-row justify-center gap-3">
                         <a href="/home" class="text-center bg-base-content btn btn-ghost text-base-200">Home</a>
-                        <a href="/home" class="text-center bg-base-content btn btn-ghost text-base-200">Home</a>
+                        <a href="/gallery" class="text-center bg-base-content btn btn-ghost text-base-200">Gallery</a>
+                        <a href="/tracks" class="text-center bg-base-content btn btn-ghost text-base-200">Tracks</a>
                     </div>
                 </div>
 
-                <div class="flex flex-col items-center gap-2">
-                    Social Media & Contact
+                <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
+                    <div class="text-xl">Social Media & Contact</div>
                     <div class="flex flex-row justify-center gap-3">
-                        <a href="/home" class="text-center bg-base-content btn btn-ghost text-base-200">Discord</a>
-                        <a href="/home" class="text-center bg-base-content btn btn-ghost text-base-200">Pinterest</a>
+                        <a href="/home" class="text-center bg-[#5865F2] btn btn-ghost text-white">Discord</a>
+                        <a href="/home" class="text-center bg-[#E60023] btn btn-ghost text-white">Pinterest</a>
+                        <a href="/home" class="text-center bg-[#FF0000] btn btn-ghost text-white">Youtube</a>
                     </div>
                 </div>
 
-                <div class="flex flex-col items-center gap-2">
-                    Work Related
+                <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
+                    <div class="text-xl">Work Related</div>
                     <div class="flex flex-row justify-center gap-3">
                         <a href="https://github.com/luckybelcik" class="text-center btn-ghost bg-white btn text-black">Github</a>
                         <a href="https://open.spotify.com/artist/3RoJSUCB7S4pRbhhupoLKc?si=284b813817904f53" class="text-center bg-[#1ED760] btn btn-ghost text-black">Spotify</a>
