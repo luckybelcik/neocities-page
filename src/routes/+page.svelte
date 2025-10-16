@@ -6,6 +6,7 @@
     import { staticDataStore } from '$lib/staticDataStore';
     import SvgIcon from '../components/SvgIcon.svelte';
     import DiscordIcon from '$lib/icons/discord-icon.svg?raw';
+    import GithubIcon from '$lib/icons/github-icon.svg?raw';
 
     let pageState = $state("loading");
     let loadingMessage = $state("loading...")
@@ -81,7 +82,7 @@
                 <div class="flex flex-col items-center gap-2 bg-base-100 p-2 rounded-lg">
                     <div class="text-xl">Work Related</div>
                     <div class="flex flex-row justify-center gap-3">
-                        <a href="https://github.com/luckybelcik" class="text-center btn-ghost bg-white btn text-black">Github</a>
+                        <a href="https://github.com/luckybelcik" class="text-center btn-ghost bg-white btn text-black"><SvgIcon svgContent={GithubIcon} />Github</a>
                         <a href="https://open.spotify.com/artist/3RoJSUCB7S4pRbhhupoLKc?si=284b813817904f53" class="text-center bg-[#1ED760] btn btn-ghost text-black">Spotify</a>
                     </div>
                 </div>
