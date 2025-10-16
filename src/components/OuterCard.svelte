@@ -2,7 +2,7 @@
     import { slide } from "svelte/transition";
     import SvgIcon from "./SvgIcon.svelte";
 
-    let { classes, title, titleWeight, titleSize, children, iconSvgString } = $props<{ classes?: string | undefined, title?: string | undefined, titleWeight?: string | undefined, titleSize?: string | undefined, children?: any, iconSvgString?: string | undefined }>();
+    let { classes, title, titleWeight, titleSize, children, iconSvgString, toggleable = true } = $props<{ classes?: string | undefined, title?: string | undefined, titleWeight?: string | undefined, titleSize?: string | undefined, children?: any, iconSvgString?: string | undefined, toggleable?: boolean }>();
 
     let isOpen = $state(true);
     let isVisible = $state(true);
@@ -34,12 +34,14 @@
 </script>
 
 <div class="{classes} relative p-5 rounded-3xl shadow-strong w-full">
+    {#if toggleable}
     <div class="absolute inset-0 h-20 bg-transparent cursor-pointer select-none z-10"
         onclick={() => toggleContent()}
         onkeydown={(e) => handleKey(e)}
         tabindex="0"
         role="button">
     </div>
+    {/if}
 
     <div class="flex flex-row gap-2 justify-center text-{titleSize}xl font-{titleWeight}">
         {title}
