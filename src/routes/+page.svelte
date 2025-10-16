@@ -3,16 +3,26 @@
     import "../app.css";
     import { fade } from 'svelte/transition';
     import OuterCard from '../components/OuterCard.svelte';
-    import { page } from '$app/state';
+    import { staticDataStore } from '$lib/staticDataStore';
 
     let pageState = $state("loading");
-
     let loadingMessage = $state("loading...")
+    let fadeDuration = $state(1000);
+
+    if ($staticDataStore.introPlayed) {
+        pageState = "display";
+        fadeDuration = 0;
+    }
 
     onMount(() => {
-        loadingMessage = "press [enter] to proceed";
-        pageState = "loaded";
-        window.addEventListener('keyup', handleEnterKey);
+        console.log("meow");
+        if ($staticDataStore.introPlayed) {
+            pageState = "display";
+        } else {
+            loadingMessage = "press [enter] to proceed";
+            pageState = "loaded";
+            window.addEventListener('keyup', handleEnterKey);
+        }
     });
 
     function handleEnterKey(event: any) {
@@ -21,13 +31,14 @@
             setTimeout(() => {
                 pageState = "display";
                 window.removeEventListener('keyup', handleEnterKey);
+                $staticDataStore.introPlayed = true;
             }, 1)
         }
     }
 </script>
 
 {#if pageState != "display"}
-  <div class="loading-overlay bg-black flex justify-center items-center flex-col" transition:fade={{duration: 1000}}>
+  <div class="loading-overlay bg-black flex justify-center items-center flex-col" transition:fade={{duration: fadeDuration}}>
     <div class="h-80">
         <img alt="lckblck logotype" src={"logotype.webp"}/>
     </div>
